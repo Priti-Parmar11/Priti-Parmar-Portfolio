@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Priti Parmar</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="about.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <!-- Navbar same as index -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        <span>Priti Parmar</span>
+      </div>
+      <div class="links">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link"><a href="about.html">About</a></div>
+        <div class="link"><a href="skills.html">Skills</a></div>
+        <div class="link"><a href="projects.html">Projects</a></div>
+        <div class="link contact-btn"><a href="tel:+917863835124">Contact Me</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="tel:+917863835124">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="about-image">
+        <img src="porfolio_img3.jpg" alt="Priti Parmar">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm <strong>Priti Parmar</strong>, a passionate front-end developer who loves building responsive, visually engaging, and user-friendly websites. I specialize in HTML, CSS, JavaScript, and PHP to enhance my backend skills. My goal is to create seamless digital experiences and constantly improve my craft.
+        </p>
+        <p>
+          I’m a detail-oriented individual, always excited to work on new challenges, collaborate with creative teams, and contribute to impactful projects.
+        </p>
+        <p>
+          Outside of coding, I enjoy exploring UI design trends, reading about tech innovation, and experimenting with new tools to improve productivity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+    function hamburg() {
+      document.querySelector(".dropdown").style.transform = "translateY(0px)";
+    }
+    function cancel() {
+      document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+  </script>
+</body>
+</html>

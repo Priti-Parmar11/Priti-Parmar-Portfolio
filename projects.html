@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Priti Parmar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        <span>Priti Parmar</span>
+      </div>
+      <div class="links">
+        <div class="link"><a href="index.html">Home</a></div>
+        <div class="link"><a href="about.html">About</a></div>
+        <div class="link"><a href="skills.html">Skills</a></div>
+        <div class="link"><a href="projects.html">Projects</a></div>
+        <div class="link contact-btn"><a href="tel:+917863835124">Contact Me</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="tel:+917863835124">Contact Us</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="main-container" style="flex-direction: column; align-items: flex-start; padding: 2rem;">
+      <h1 data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 20px;">My <span>Projects</span></h1>
+
+      <!-- Project 1 -->
+      <div class="project" data-aos="fade-up" data-aos-delay="200" style="margin-bottom: 3rem; max-width: 800px;">
+        <h2 style="color: rgb(109,67, 0); margin-bottom: 10px;">Advocate Management System</h2>
+        <!--<img src="advocate_system.png" alt="Advocate System Screenshot" style="width: 100%; border-radius: 10px; margin-top: 1rem;" />-->
+        <p style="margin-bottom: 10px; line-height: 1.6;">
+          The Advocate Management System is a robust platform designed to streamline the management of legal cases and client interactions. It allows users to easily add and view client information, ensuring quick access to essential details. The system also facilitates adding and viewing case stages, acts, and registered cases, providing a comprehensive overview of the legal process. With these functionalities, advocates can efficiently manage their practice.
+        </p>
+        <a href="https://github.com/Priti-Parmar11/Advocate-Management-System" target="_blank" style="color: rgb(109,67, 0); font-weight: 600;">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project" data-aos="fade-up" data-aos-delay="400" style="max-width: 800px;">
+        <h2 style="color: rgb(109,67, 0); margin-bottom: 10px;">Nursery Management System</h2>
+        <!--<img src="nursery_system.png" alt="Nursery System Screenshot" style="width: 100%; border-radius: 10px; margin-top: 1rem;" />-->
+        <p style="margin-bottom: 10px; line-height: 1.6;">
+          The Nursery Management System project aimed to streamline the processes involved in managing various aspects of plant care and maintenance. Users could register and log in to access a user-friendly dashboard, where they could track plant health. The system featured a comprehensive database of plant species, complete with care instructions and growth tips.
+        </p>
+        <a href="https://github.com/Priti-Parmar11/Nursery-Management-System" target="_blank" style="color: rgb(109,67, 0); font-weight: 600;">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+    function hamburg() {
+      document.querySelector(".dropdown").style.transform = "translateY(0px)";
+    }
+    function cancel() {
+      document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+  </script>
+</body>
+</html>

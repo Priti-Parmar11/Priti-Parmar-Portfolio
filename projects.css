@@ -1,0 +1,20 @@
+.project h2 {
+    font-size: 1.8rem;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #000;
+    text-shadow: 0 0 5px rgb(109,67, 0);
+}
